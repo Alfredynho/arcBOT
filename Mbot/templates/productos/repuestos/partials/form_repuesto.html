@@ -1,0 +1,125 @@
+{% load i18n static %}
+
+<form class="form-horizontal" action="." method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group {% if form.serial_code.errors %}has-error{% endif%}">
+                <label class="col-md-3 control-label">{% trans 'Codigo' %}</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="id_serial_code" 
+                    name="serial_code" value="{% if form.serial_code.value %} {{ form.serial_code.value }} {% endif %}">
+                </div>
+                {% if form.serial_code.errors %}
+                    <span class="help-block">
+                        {% for error in form.serial_code.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+            <div class="form-group {% if form.name.errors %}has-error{% endif%}">
+                <label class="col-md-3 control-label">{% trans 'Nombre' %}</label>
+                <div class="col-md-6">
+                   <input type="text" class="form-control" id="id_name" 
+                    name="name" value="{% if form.name.value %} {{ form.name.value }} {% endif %}">
+                </div>
+                {% if form.name.errors %}
+                    <span class="help-block">
+                        {% for error in form.name.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+            <div class="form-group {% if form.brand.errors %}has-error{% endif%}">
+                <label class="col-md-3 control-label">{% trans 'Marca' %}</label>
+                <div class="col-md-9">
+                   <input type="text" class="form-control" id="id_brand" 
+                    name="brand" value="{% if form.brand.value %} {{ form.brand.value }} {% endif %}">
+                </div>
+                {% if form.brand.errors %}
+                    <span class="help-block">
+                        {% for error in form.brand.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+            <div class="form-group {% if form.price.errors %}has-error{% endif%}">
+                <label class="col-md-3 control-label">{% trans 'Precio' %}</label>
+                <div class="col-md-9">
+                   <input type="text" class="form-control" id="id_price" 
+                    name="price" value="{% if form.price.value %} {{ form.price.value }} {% endif %}">
+                </div>
+                {% if form.price.errors %}
+                    <span class="help-block">
+                        {% for error in form.price.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>    
+
+            <div class="form-group {% if form.stock.errors %}has-error{% endif%}">
+                <label class="col-md-3 control-label">{% trans 'Stock' %}</label>
+                <div class="col-md-3">
+                   <input type="text" class="form-control" id="id_stock" 
+                    name="stock" value="{% if form.stock.value %} {{ form.stock.value }} {% endif %}">
+                </div>
+                {% if form.stock.errors %}
+                    <span class="help-block">
+                        {% for error in form.stock.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group {% if form.characteristics.errors %}has-error{% endif%}">
+                <label class="col-md-2 control-label">{% trans 'Caracteristicas' %}</label></br></br>
+                <div class="col-md-10">
+                    <textarea class="form-control" rows="5" id="id_characteristics" 
+                    name="characteristics" value="{% if form.characteristics.value %} {{ form.characteristics.value }} {% endif %}"></textarea>
+                </div>
+                {% if form.characteristics.errors %}
+                    <span class="help-block">
+                        {% for error in form.characteristics.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div> 
+
+            <div class="form-group {% if form.image.errors %}has-error{% endif%}">
+                <label class="col-md-2 control-label">{% trans 'Imagen'%}</label>
+                <div class="col-md-10">
+                    <input type="file" class="form-control" id="id_image"
+                           name="image" value="{% if form.image.value %}{{ form.image.value }}{% endif %}">
+                </div>
+                {% if form.image.errors %}
+                    <span class="help-block">
+                        {% for error in form.image.errors %}
+                            <span>{{ error|escape }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>                                          
+
+        </div>
+    </div></br>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button class="btn btn-success btn-clean">{% trans 'Registrar' %}</button>
+        </div>
+    </div>
+    </br>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a herf ="/motocicletas/" class="btn btn-primary btn-clean">{% trans 'Regresar' %}</a>
+        </div>
+    </div>
+</form>

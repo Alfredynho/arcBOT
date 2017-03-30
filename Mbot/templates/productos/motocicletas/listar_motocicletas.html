@@ -51,7 +51,7 @@
                         <tr>                                            
                             <td>
                                 <div class="contact contact-rounded contact-bordered contact-lg status-online">
-                                    <img src="{% static './assets/images/landing/1bot.svg' %}">
+                                    <img src="{{ moto.image.url }}" width="110" height="40">
                                     <div class="contact-container">
                                         <a href="#">{{ moto.serial_code}}</a>
                                     {% if moto.stock > 0 %}

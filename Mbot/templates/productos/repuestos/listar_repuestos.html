@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
-        <title>{% block title %}Repuestos{% endblock title %}</title>            
-{% block content %}
+        <title>{% block title %}Accesorios{% endblock title %}</title>            
 {% load i18n static %}
+
+{% block content %}
 
 <!-- START APP CONTAINER -->
 <div class="container">                
@@ -13,10 +14,18 @@
                 <!-- START HEADING -->
                 <div class="app-heading app-heading-small">
                     <div class="title">
-                        <h5>Listado de Repuestos</h5>
-                        <p>Repuestos USMOTOS</p>
+                        <h5>{% trans 'Listado de Accesorios' %}</h5>
+                        <p>{% trans 'Accesorios USMOTOS' %}</p></br></br>
+                    {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                                </br><p><span class="label label-success label-bordered label-ghost" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</span></p>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                     </div>
                     <div class="heading-elements">
+                        <a href="{% url 'replacement:view-new-repuesto' %}" class="btn btn-primary"><span class="fa fa-plus"></span> Agregar</a>
                         <div class="btn-group">
                             <button class="btn btn-primary btn-icon-fixed dropdown-toggle" data-toggle="dropdown"><span class="fa fa-bars"></span> Exportar</button>
                             <ul class="dropdown-menu dropdown-left">
@@ -26,13 +35,14 @@
                     </div>
                 </div>
                 <!-- END HEADING -->
+                
                 <table class="table table-head-light table-striped">
                     <thead>
                         <tr>                                            
                             <th>Codigo Serie</th>
-                            <th>Nombre</th>
-                            <th>Descripcion</th>
-                            <th>Marca</th>
+                            <th>Caja</th>
+                            <th>Color</th>
+                            <th>Motor</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>
@@ -41,9 +51,9 @@
                         <tr>                                            
                             <td>
                                 <div class="contact contact-rounded contact-bordered contact-lg status-online">
-                                    <img src="{% static './assets/images/landing/1bot.svg' %}">
+                                    <img src="{{ repuesto.image.url }}" width="110" height="40">
                                     <div class="contact-container">
-                                        <a href="#">{{ repuesto.serial_code }}</a>
+                                        <a href="#">{{ repuesto.serial_code}}</a>
                                     {% if repuesto.stock > 0 %}
                                         <p><span class="label label-success label-bordered label-ghost">Disponible</span></p>
                                     {% elif repuesto.stock <= 0 %}
@@ -55,15 +65,15 @@
                             <td>
                                 <p>{{repuesto.name}}</p>
                             </td>
-                            <td>{{repuesto.description}}</td>
+                            <td>{{repuesto.stock}}</td>
                             <td>
-                            <p> {{repuesto.brand}}</p>
+                            <p> {{repuesto.price}}</p>
                             </td>                                        
                             <td>
-                                <a href="#" class="label-icon label-icon-primary"><i class="fa fa-plus"></i></a>
-                                <a href="#" class="label-icon label-icon-success"><i class="fa fa-edit"></i></a>
-                                <a href="#" class="label-icon label-icon-success label-icon-bordered"><i class="fa fa-trash"></i></a>
-                                <a href="#" class="label-icon label-icon-primary label-icon-bordered"><i class="fa fa-desktop"></i></a>
+                                <a href="{% url "replacement:view-edit-repuesto" repuesto.id %}" class="label-icon label-icon-success"><i class="fa fa-edit"></i></a>
+                                <a href="{% url "replacement:view-delete-repuesto" repuesto.id %}" class="label-icon label-icon-success label-icon-bordered"><i class="fa fa-trash"></i></a>
+                                <a href="{% url "replacement:view-detail-repuesto" repuesto.id %}" class="label-icon label-icon-primary label-icon-bordered"><i class="fa fa-desktop"></i></a>
+
                             </td>
                         </tr>
                     </tbody>
@@ -77,27 +87,29 @@
         
     </div>
     <!-- END APP CONTENT -->
-        {% if repuestos.has_other_pages %}
-          <ul class="pagination">
-            {% if repuestos.has_previous %}
-              <li><a href="?page={{ repuestos.previous_page_number }}">&laquo;</a></li>
-            {% else %}
-              <li class="disabled"><span>&laquo;</span></li>
-            {% endif %}
-            {% for i in repuestos.paginator.page_range %}
-              {% if repuestos.number == i %}
-                <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
-              {% else %}
-                <li><a href="?page={{ i }}">{{ i }}</a></li>
-              {% endif %}
-            {% endfor %}
-            {% if repuestos.has_next %}
-              <li><a href="?page={{ repuestos.next_page_number }}">&raquo;</a></li>
-            {% else %}
-              <li class="disabled"><span>&raquo;</span></li>
-            {% endif %}
-          </ul>
-        {% endif %}                 
+        <!-- START PAGINATION --> 
+            {% if list_repuestos.has_other_pages %}
+              <ul class="pagination">
+                {% if list_repuestos.has_previous %}
+                  <li><a href="?page={{ list_repuestos.previous_page_number }}">&laquo;</a></li>
+                {% else %}
+                  <li class="disabled"><span>&laquo;</span></li>
+                {% endif %}
+                {% for i in list_repuestos.paginator.page_range %}
+                  {% if list_repuestos.number == i %}
+                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                  {% else %}
+                    <li><a href="?page={{ i }}">{{ i }}</a></li>
+                  {% endif %}
+                {% endfor %}
+                {% if list_repuestos.has_next %}
+                  <li><a href="?page={{ list_repuestos.next_page_number }}">&raquo;</a></li>
+                {% else %}
+                  <li class="disabled"><span>&raquo;</span></li>
+                {% endif %}
+              </ul>
+            {% endif %}   
+        <!-- END PAGINATION -->              
 </div>
 <!-- END APP CONTAINER -->
 {% endblock content%}
