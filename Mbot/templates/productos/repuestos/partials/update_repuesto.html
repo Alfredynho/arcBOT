@@ -18,15 +18,15 @@
                     </span>
                 {% endif %}
             </div>
-            <div class="form-group {% if form.color.errors %}has-error{% endif%}">
-                <label class="col-md-3 control-label">{% trans 'Color' %}</label>
+            <div class="form-group {% if form.name.errors %}has-error{% endif%}">
+                <label class="col-md-3 control-label">{% trans 'Nombre' %}</label>
                 <div class="col-md-6">
-                   <input type="text" class="form-control" id="id_color" 
-                    name="color" value="{% if form.color.value %} {{ form.color.value }} {% endif %}">
+                   <input type="text" class="form-control" id="id_name" 
+                    name="name" value="{% if form.name.value %} {{ form.name.value }} {% endif %}">
                 </div>
-                {% if form.color.errors %}
+                {% if form.name.errors %}
                     <span class="help-block">
-                        {% for error in form.color.errors %}
+                        {% for error in form.name.errors %}
                             <span>{{ error|escape }}</span>
                         {% endfor %}
                     </span>
@@ -61,21 +61,6 @@
                 {% endif %}
             </div>    
 
-            <div class="form-group {% if form.cylinder_capacity.errors %}has-error{% endif%}">
-                <label class="col-md-3 control-label">{% trans 'Cilindrada' %}</label>
-                <div class="col-md-6">
-                   <input type="text" class="form-control" id="id_cylinder_capacity" 
-                    name="cylinder_capacity" value="{% if form.cylinder_capacity.value %} {{ form.cylinder_capacity.value }} {% endif %}">
-                </div>
-                {% if form.cylinder_capacity.errors %}
-                    <span class="help-block">
-                        {% for error in form.cylinder_capacity.errors %}
-                            <span>{{ error|escape }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-            </div>
-
             <div class="form-group {% if form.stock.errors %}has-error{% endif%}">
                 <label class="col-md-3 control-label">{% trans 'Stock' %}</label>
                 <div class="col-md-3">
@@ -90,73 +75,10 @@
                     </span>
                 {% endif %}
             </div>
-            
-            <div class="form-group {% if form.motor.errors %}has-error{% endif%}">
-                <label class="col-md-3 control-label">{% trans 'Motor' %}</label>
-                <div class="col-md-6">
-                   <input type="text" class="form-control" id="id_motor" 
-                    name="motor" value="{% if form.motor.value %} {{ form.motor.value }} {% endif %}">
-                </div>
-                {% if form.motor.errors %}
-                    <span class="help-block">
-                        {% for error in form.motor.errors %}
-                            <span>{{ error|escape }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-            </div>
 
         </div>
+
         <div class="col-md-6">
-                                                        
-            <div class="form-group {% if form.type.errors %}has-error{% endif %}">
-                <label class="col-md-3 control-label">{% trans 'Tipo' %}</label>
-                <div class="col-md-9">
-                    <select class="bs-select bootstrap-select" name="type" id="id_type">
-                        {% for value, text in form.type.field.choices %}
-                            <option value="{{ value }}">{{ text }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                {% if form.type.errors %}
-                    <span class="help-block">
-                        {% for error in form.type.errors %}
-                            <span>{{ error|escape }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-            </div>
-
-            <div class="form-group {% if form.model.errors %}has-error{% endif%}">
-                <label class="col-md-3 control-label">{% trans 'Modelo' %}</label>
-                <div class="col-md-3">
-                   <input type="text" class="form-control" id="id_model" 
-                    name="model" value="{% if form.model.value %} {{ form.model.value }} {% endif %}">
-                </div>
-                {% if form.model.errors %}
-                    <span class="help-block">
-                        {% for error in form.model.errors %}
-                            <span>{{ error|escape }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-            </div>   
-
-            <div class="form-group {% if form.box.errors %}has-error{% endif%}">
-                <label class="col-md-3 control-label">{% trans 'Caja' %}</label>
-                <div class="col-md-3">
-                   <input type="text" class="form-control" id="id_box" 
-                    name="box" value="{% if form.box.value %} {{ form.box.value }} {% endif %}">
-                </div>
-                {% if form.box.errors %}
-                    <span class="help-block">
-                        {% for error in form.box.errors %}
-                            <span>{{ error|escape }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-            </div>
-
             <div class="form-group {% if form.characteristics.errors %}has-error{% endif%}">
                 <label class="col-md-2 control-label">{% trans 'Caracteristicas' %}</label></br></br>
                 <div class="col-md-10">
@@ -176,7 +98,7 @@
                 <label class="col-md-2 control-label">{% trans 'Imagen'%}</label>
                 <div class="col-md-10">
                     <input type="file" class="form-control" id="id_image"
-                           name="image" value="{% if form.image.url %}{{ form.image.url }}{% endif %}">
+                           name="image" value="{% if form.image.value %}{{ form.image.value }}{% endif %}">
                 </div>
                 {% if form.image.errors %}
                     <span class="help-block">

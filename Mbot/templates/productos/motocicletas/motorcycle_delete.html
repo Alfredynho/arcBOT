@@ -15,7 +15,13 @@
                 	<img src="{{ object.image.url }}" width="320" height="100">             
 				<form method="post">
 					{% csrf_token %}
-					<h3>¿Desea eliminar el registro de {{ object.serial_code }}?</h3>	
+                    </br>
+                    <div class="alert alert-info alert-icon-block alert-dismissible" role="alert"> 
+                        <div class="alert-icon">
+                            <span class="icon-menu-circle"></span> 
+                        </div>
+                        <strong>Info!</strong>  ¿Desea eliminar el registro de {{ object.serial_code }}?
+                    </div>
 					<button class="btn btn-danger" type="submit">Sí, eliminar</button>
 					<a class= "btn btn-default" href="">Cancelar</a>
 				</form>   
