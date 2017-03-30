@@ -1,63 +1,16 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.pyc
+## GetBOT Backend
 
-# OSX Finder turds
-.DS_Store
+**GETBOT** Backend para BOTs messenger
+### Tecnologías
 
-# dev DB
-# *.db
+  * [Django](https://www.djangoproject.com/)
+  * [Django Rest Framework](http://www.django-rest-framework.org/)
+  * [Booya Template](http://semantic-ui.com/)
 
-# Boxes
-*.box
-*.log
+## Funcionalidades
+  * Usuario, Authenticación
+  * Servicios web para aplicaciones
 
-# Distribution / packaging
-.idea/
-.sass-cache/
-.vagrant/
-cache/
+### Commercial Support
 
-# Folders
-public/
-extras/
-env/
-var/
-node_modules/
-
-
-# Unit test / coverage reports
-coverage/
-.coverage
-.cache
-
-
-# Sphinx documentation
-docs/_build/
-
-
-# Configuration
-.environment
-servers.json
-digitalocean.json
-
-
-
-.DS_STORE
-*.ipr
-*.iml
-*.iws
-*.flags.json
-npm-debug.log
-web/
-lib/*.zip
-version.properties
-.sass-cache
-swagger-ui.sublime-workspace
-.idea
-.project
-node_modules/*
-/nbproject/private/
-dist/specs/
-test/specs/local/
-
+GITBO es soportado por [@alfredynho](alfredynho.cg@gmail.com).
