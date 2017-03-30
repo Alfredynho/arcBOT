@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+        <title>{% block title %}Motocicletas{% endblock title %}</title>            
+{% load i18n static %}
+
+{% block content %}
+<!-- START PAGE CONTAINER -->
+<div class="container">                                       
+    <!-- RECENT ACTIVITY -->
+    <div class="block block-condensed">                            
+        <div class="app-heading app-heading-small">
+            <div class="title">
+                <h2>{% trans 'Registro de Motocicleta'%}</h2>
+                <p>{% trans 'USMOTOS' %}</p>
+            </div>
+        </div>
+        <div class="block-content">                   
+            {% include 'productos/motocicletas/partials/update_motocicleta.html' %}                 
+        </div>
+    </div>
+    <!-- END RECENT -->
+            
+</div>
+
+<!-- END PAGE CONTAINER -->
+
+{% endblock content%}

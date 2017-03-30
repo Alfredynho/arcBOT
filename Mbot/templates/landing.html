@@ -1,0 +1,222 @@
+{% load i18n static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>                        
+        <title>USM | Inicio</title>
+        
+        <!-- META SECTION -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- END META SECTION -->
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+
+        <!-- EOF CSS INCLUDE -->
+    <style type="text/css">
+        
+        .btn-messenger{
+            background-color: #0084FF;
+            padding: 10px;
+            border-radius: 5px;
+            color:#fff;
+        }
+        .btn-telegram{
+            background-color: #3b5998;
+            padding: 10px;
+            border-radius: 5px;
+            color:#fff;
+        }
+        .centero{
+            background-color: black;
+            opacity: 0.7;
+            border-radius: 10px;
+        }
+    </style>
+    </head>
+    <body>        
+        
+        <!-- APP WRAPPER -->
+
+        <div class="app">            
+            <header id="header" >
+                <div class="header">
+                    <div class="container">
+                        <a href="#" class="logo"></a>
+                        <button class="navigation-toggle"><span class="icon-menu"></span></button>
+                        <ul class="navigation hidden-mobile">
+                            <li><a href="#header">Inicio</a></li>
+                            <li><a href="#features">Caracteristicas</a></li>                            
+                            <li><a href="#contact">Contactanos</a></li>
+                            <li><a href="#">{% trans 'Entrar' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="header-content">
+                    <div class="container text-center invert ">
+                        <h1 class="">Por que tu tiempo <strong>lo vale!</strong></h1>
+                        <div class="">Con GERBOT, atiende a tus clientes las 24 Hrs.</div>
+                        <div class="image-container">
+                            <img src="{% static './assets/images/landing/mobiles.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="section invert section-condensed">
+                <div class="container text-center">
+                    <p>
+                        <a target="_blank" href="https://m.me/ChuspitaFintech/" class="btn btn-messenger btn-lg btn-shadowed">
+                            <img src="{% static './assets/images/landing/mess2.png' %}" width="20px"> &nbsp; Probar en Messenger</a>  &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://m.me/ChuspitaFintech/" class="btn btn-telegram btn-lg btn-shadowed">
+                            <img src="{% static  './assets/images/landing/facebook.png' %}" width="20px"> &nbsp; Fan Page Facebook
+                    </a></p>
+
+                </div>
+            </section>
+            
+        
+              <section class="section section-highlight" id="features">
+                <div class="container">                    
+                    
+                    <div class="heading-wrapper text-center">                                
+                        <div class="above-heading">Con GERBOT tienes:</div>
+                        <h3 class="text-uppercase">BENEFICIOS INCREIBLES</h3>
+                        <div class="under-heading">Porque tu tiempo nos IMPORTA!!!.</div>
+                    </div>
+                    
+                    <div class="row">
+                                                
+                        <div class="col-md-4">                            
+                            <div class="feature text-center">                                
+                                <div class="feature-icon feature-icon-sm text-lime-500">
+                                    <img src="{% static 'img/corazon.png' %}" width="100px">
+                                </div>
+                                <h6 class="text-uppercase text-bolder">FACIL DE USAR</h6>
+                                <div class="under-heading">Solo escribenos por Messenger.</div>
+                                <p>Buscanos como <i>GERBOT</i> y veras los facil que es de utilizar, además admitamoslo casi todos tienen cuenta en facebook.</p>
+                            </div>                                                        
+                        </div>
+                         <div class="col-md-4">                            
+                            <div class="feature text-center">                                
+                                <div class="feature-icon feature-icon-sm text-lime-500">
+                                    <img src="{% static 'img/reloj.png' %}" width="100px">
+                                </div>
+                                <h6 class="text-uppercase text-bolder">AHORRA TIEMPO</h6>
+                                <div class="under-heading">Atiende a muchos clientes a la vez</div>
+                                <p>Con <i>GERBOT</i> puedes configurar tu cuenta de facebook para atender automáticamente a todos tus clientes.</p>
+                            </div>                                                        
+                        </div>
+                         <div class="col-md-4">                            
+                            <div class="feature text-center">                                
+                                <div class="feature-icon feature-icon-sm text-lime-500">
+                                    <img src="{% static 'img/mapa.png' %}" width="100px">
+                                </div>
+                                <h6 class="text-uppercase text-bolder">24/7</h6>
+                                <div class="under-heading">Puedes estar disponible todo el tiempo</div>
+                                <p>Con <i>GERBOT</i> puedes estar disponible las 24 Horas del dia los 7 días de la semana</p>
+                            </div>                                                        
+                        </div>
+                                               
+                    </div>
+                   
+                    
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="container">                    
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <div class="feature margin-top-50">                                
+                                <div class="above-heading">Escribenos ya!</div>
+                                <h4 class="text-uppercase">100% Segura y confiable</h4>
+                                <div class="under-heading">Gerbot &mdash; la Opción más facil y accesible!</div>
+                                                                
+                                <p><a href="https://m.me/ChuspitaFintech/" class="btn btn-messenger btn-lg btn-shadowed">
+                                    <img src="{% static 'assets/images/landing/mess2.png' %}" width="20px"> &nbsp; Probar en Messenger</a>&nbsp;&nbsp; <a href="https://m.me/ChuspitaFintech/" class="btn btn-telegram btn-lg btn-shadowed">
+                                <img src="{% static 'assets/images/landing/facebook.png' %}" width="20px"> &nbsp; Fan Page Facebook</a></p>
+                                     
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 text-center hidden-mobile">                                                        
+                            <img src="{% static 'assets/images/landing/responsive.png' %}" class="dont-resize" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <!-- START APP FOOTER -->
+            <div class="app-footer app-footer-default" id="contact">
+                <div class="container">                    
+                    <div class="app-footer-line extended">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <h3 class="title"> GERBOT</h3>                            
+                                <p>La manera más facil de responder a tus preguntas solo enviando un mensaje por tu red social preferida.</p>
+                                <p><strong>Como?</strong><br>Escribenos por <i><b>Facebook Messenger</b> y pruebalo ya!.</p>
+                            </div>
+                           
+                            
+                            <div class="col-md-6 col-sm-6">
+                                <h3 class="title"><span class="icon-thumbs-up"></span> REDES SOCIALES</h3>
+
+                                <a href="" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                &nbsp;
+                                <a href="" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
+                                    
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                                                
+
+                                
+                            </div>                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="app-footer-line darken">                
+                    <div class="copyright wide text-center">&copy; 2017 Gerbot. Todos los derechos reservados en Bolivia.</div>                
+                </div>                
+            </div>
+            <!-- END APP FOOTER -->
+            
+        </div>        
+        <!-- END APP WRAPPER -->                
+        
+        <!-- START SCRIPTS -->
+        <script type="text/javascript" src="{% static 'js/vendor/jquery/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/jquery/jquery-migrate.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/bootstrap/bootstrap.min.js' %}"></script>
+        
+        <script type="text/javascript" src="{% static 'js/app-landing.js' %}"></script>
+        <script src="{% static 'js/jquery.backgroundvideo.min.js' %}"></script>
+
+        <script>
+          $(document).ready(function() {
+            var videobackground = new $.backgroundVideo($('header'), {
+              "align": "centerXY",
+              "width": 1280,
+              "height": 720,
+              "path": "{% static 'img/' %}",
+              "filename": "video",
+              "types": ["mp4","ogg","webm"],
+              "preload": true,
+              "autoplay": true,
+              "loop": true
+            });
+          });
+        </script>
+        
+        <!-- END SCRIPTS -->
+    </body>
+</html>

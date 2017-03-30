@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+        <title>{% block title %}Asistencia{% endblock title %}</title>            
+{% block content %}
+{% load i18n static %}
+
+<!-- START PAGE CONTAINER -->
+<div class="container">    
+    <div class="row margin-bottom-20">
+    {% for asistencia in object_list %}
+        <div class="col-md-6">
+            <!-- START PAGE HEADING -->
+            <div class="app-heading app-heading-small app-heading-bordered">
+                <div class="icon icon-lg">
+                    <span class="icon-laptop-phone"></span>
+                </div>
+                <div class="title">
+                    <h2>{{ asistencia.category }}</h2>
+                    <p></p>
+                </div>                        
+                <div class="heading-elements">
+                    <a href="#" class="label-icon label-icon-primary"><i class="fa fa-plus"></i></a>
+                    <a href="#" class="label-icon label-icon-success"><i class="fa fa-edit"></i></a>
+                    <a href="#" class="label-icon label-icon-success label-icon-bordered"><i class="fa fa-trash"></i></a>
+                    <a href="#" class="label-icon label-icon-primary label-icon-bordered"><i class="fa fa-desktop"></i></a>
+                </div>
+            </div>
+            <!-- END PAGE HEADING -->
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</p></p></p></p></p></p></p></p></p></p></p>
+<!-- START PAGE HEADING -->                    
+<div class="app-heading app-heading-background app-heading-light" style="background: url({% static 'assets/header/header-1.jpg' %}) center center no-repeat;">
+    <div class="icon icon-lg">
+        <span class="fa fa-reddit"></span>
+    </div>
+    <div class="title">
+        <h2>GITBO asistencia oportuna para todos tus usuarios</h2>
+        <p>Porque el tiempo de tus usuarios nos importa</p>
+    </div>
+    <div class="heading-elements">                            
+        <a class="btn btn-success"><span class="fa fa-thumbs-o-up"></span> TODO LIKE</a>
+    </div>                        
+</div>
+<!-- END PAGE CONTAINER -->
+{% endblock content%}

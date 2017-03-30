@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+        <title>{% block title %}Repuestos{% endblock title %}</title>            
+{% block content %}
+                <!-- START APP CONTENT -->
+                <div class="app-content app-sidebar-left">
+                    <!-- START PAGE HEADING -->
+                    <div class="app-heading app-heading-bordered app-heading-page">                        
+                        <div class="title">
+                            <h1>Repuestos</h1>
+                            <p>USMOTOS</p>
+                        </div>
+                        <div class="heading-elements">
+                            <a href="#" class="btn btn-danger" id="page-like"><span class="app-spinner loading"></span> loading...</a>
+                            <a href="https://themeforest.net/item/boooya-revolution-admin-template/17227946?ref=aqvatarius&license=regular&open_purchase_for_item_id=17227946" class="btn btn-success btn-icon-fixed"><span class="icon-text">$24</span> Purchase</a>
+                        </div>
+                    </div>
+                    <div class="app-heading-container app-heading-bordered bottom">
+                    </div>
+                    <!-- END PAGE HEADING -->                 
+                    
+                    <!-- START PAGE CONTAINER -->
+                    <div class="container">
+
+                        <div class="row">
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                
+                                <div class="block block-condensed">
+                                    <!-- START HEADING -->
+                                    <!-- END HEADING -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="block block-condensed">
+                            <!-- START HEADING -->
+                            <div class="app-heading app-heading-small">
+                                <div class="title">
+                                    <h5>Lista de Repuestos</h5>
+                                <a class="btn btn-info btn-icon-fixed" href="{% url 'agregar_repuesto' %}"><span class="icon-move"></span>Agregar Repuesto</a>                                    
+                                </div>
+                            </div>
+                            <!-- END HEADING -->
+                            
+                            <table class="table table-head-light table-striped">
+                                <thead>
+                                    <tr>                                            
+                                        <th>Repuesto</th>
+                                        <th>Descripcion</th>
+                                        <th>Precio</th>
+                                        <th>Comprar</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {% for rep in repuesto %}
+                                    <tr>                                            
+                                        <td>
+                                            <div class="contact contact-rounded contact-lg status-online">
+                                            <img src="/media/{{ rep.imagen }}">
+                                                <div class="contact-container">
+                                                    <a href="#">{{rep.nombre}}</a>
+                                                    <span>USM</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p><strong>{{rep.descripcion}}</strong></p>
+                                        </td>
+                                        <td>{{rep.precio}}</td>
+                                        <td>
+                                            {% if rep.stock > 0 %}
+                                                <a class="btn btn-success btn-icon-fixed" href="{% url "crearV" %}"><span class="icon-arrow-up-circle"></span> Comprar</a>
+                                            {% else %}
+                                                <a class="btn btn-danger btn-icon-fixed" ><span class="icon-layers"></span>Agotado</a>
+                                            {% endif %}
+                                        </td>                                        
+                                        <td>
+                                            <a class="btn btn-default btn-icon" href="/edit/motocicleta/{{moto.id}}/"><span class="fa fa-pencil"></span></a>
+                                            <a class="btn btn-default btn-icon" data-toggle="modal" data-target="#modal-primary"><span class="fa icon-eye"></span></a>
+                                            <a class="btn btn-default btn-icon" href="/borrar/{{moto.id}}/"><span class="fa icon-trash"></span></a>
+                                        </td>
+                                    </tr>                                        
+                                {% endfor%}
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- END PAGE CONTAINER -->
+
+                </div>
+                <!-- END APP CONTENT -->
+             <!-- MODAL PRIMARY -->
+            {% for mp in producto %}                        
+            <div class="modal fade" id="modal-primary" tabindex="-1" role="dialog" aria-labelledby="modal-primary-header">                        
+                <div class="modal-dialog modal-primary" role="document">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-cross"></span></button>
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-primary-header">{{mp.codigo_serie}}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p><b>Motor</b></br>{{mp.motor}}</p>
+                            <p><b>Caracteristicas</b></br>{{mp.caracteristicas}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Cerrar</button>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endfor %}
+
+            <center>
+    {% if repuesto %}
+    <div class="pagination-rounded">
+    <ul>
+        <li><a href="/vista_repuesto/page/1"> << </a></li>
+    {% if repuesto.has_previous %}
+        <li><button class="btn btn-danger btn-clean btn-rounded" href="/vista_repuesto/page/{{repuesto.previous_page_number }}/" > Prev </button><br></li>
+    {% else %}
+        <li><button class="btn btn-danger btn-clean btn-rounded" href="#"> Prev </button></li>
+    {% endif %}
+    {% if repuesto.has_next %}
+        <li><button class="btn btn-danger btn-clean btn-rounded" href="/vista_repuesto/page/{{producto.next_page_number }}/"> Next </button><br></li><br>
+    {% else %}
+        <li><button class="btn btn-danger btn-clean btn-rounded" href="#"> Next </button></li>
+    {% endif %}
+        <li><a href="/vista_repuesto/page/{{repuesto.paginator.num_pages }} "> >> </a><li>
+    </ul>
+    <h4> Página {{ repuesto.number }} de {{ repuesto.paginator.num_pages }}</h4>
+    </div>
+{% endif %}
+</center>
+            <!-- END MODAL PRIMARY -->
+                                
+{% endblock content%}

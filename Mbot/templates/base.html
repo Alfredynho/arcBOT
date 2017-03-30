@@ -1,0 +1,149 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>       
+        <title>{% block title %}Titulo base del proyecto{% endblock title %}</title>
+        {% block css %}
+        
+        {% endblock %}                               
+        <!-- META SECTION -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <!-- END META SECTION -->
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <!-- EOF CSS INCLUDE -->
+    </head>
+    <body>        
+        
+        <!-- APP WRAPPER -->
+        <div class="app">            
+            
+            <!-- START APP CONTAINER -->
+            <div class="app-container">                
+                <!-- START SIDEBAR -->
+                <div class="app-sidebar app-navigation app-navigation-fixed scroll app-navigation-style-default app-navigation-open-hover dir-left" data-type="close-other">
+                    <a href="index.html" class="app-navigation-logo">
+                        Boooya - Revolution Admin Template
+                        <button class="app-navigation-logo-button mobile-hidden" data-sidepanel-toggle=""><span class="icon-alarm"></span></button>
+                    </a>
+                    <nav>
+                        <ul>
+                            <li class="title">USMOTOS</li>
+                            <li><a href="/dashboard/"><span class="fa fa-rocket" aria-hidden="true"></span> Dashboard</a></li>
+                            <li>
+                                <a><span class="fa fa-users" aria-hidden="true"></span>Gestionar Clientes</span></a>
+                                <ul>                                
+                                    <li><a href="/vista_clientes/page/1/"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar Clientes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><span class="fa fa-motorcycle" aria-hidden="true"></span>Productos</a>
+                                <ul>
+                                    <li><a href="{% url 'motorcycle:view-motocicletas' %}"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar Motocicletas</a></li>
+                                    <li><a href="/vista_repuesto/page/1/"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar Repuestos</a></li>
+                                </ul>
+                            </li> 
+                            <li>
+                                <a><span class="fa fa-american-sign-language-interpreting" aria-hidden="true"></span>Proveedor</a>
+                                <ul>
+                                    <li><a href="#"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar Proveedores</a></li>
+                                </ul>
+                            </li> 
+                            <li>
+                                <a><span class="fa fa-wrench" aria-hidden="true"></span>Asistencia</a>
+                                <ul>
+                                    <li><a href="pages-faq.html"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar Asistencias</a></li>
+                                </ul>
+                            </li> 
+                            <li>
+                                <a ><span class="fa fa-file-text-o" aria-hidden="true"></span>Cotizacion</a>
+                                <ul>
+                                    <li><a href="pages-faq.html"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar Cotizaciones</a></li>
+                                </ul>
+                            </li> 
+                            <li>
+                                <a><span class="fa fa-shopping-cart" aria-hidden="true"></span>Venta</a>
+                                <ul>
+                                    <li><a href="pages-faq.html"><span class="fa fa-list-alt" aria-hidden="true"></span>Listar ventas</a></li>
+                                </ul>
+                            </li> 
+                            <li>
+                                <a><span class="fa fa-shopping-cart" aria-hidden="true"></span>Ayuda</a>
+                                <ul>
+                                    <li><a href="pages-faq.html"><span class="fa fa-list-alt" aria-hidden="true"></span>Informacion del Sistema</a></li>
+                                    <li><a  href="/alfredynho/#"><span class="fa fa-list-alt" aria-hidden="true"></span>Informacion del Desarrollador</a></li>
+                                </ul>
+                            </li>  
+                        </ul>
+                    </nav>
+                </div>
+                <!-- END SIDEBAR -->
+                
+                <!-- START APP CONTENT -->
+                <div class="app-content app-sidebar-left">
+                    <!-- START APP HEADER -->
+                    <div class="app-header">
+                        <ul class="app-header-buttons">
+                            <li class="visible-mobile"><a href="#" class="btn btn-link btn-icon" data-sidebar-toggle=".app-sidebar.dir-left"><span class="icon-menu"></span></a></li>
+                            <li class="hidden-mobile"><a href="#" class="btn btn-link btn-icon" data-sidebar-minimize=".app-sidebar.dir-left"><span class="icon-menu"></span></a></li>
+                        </ul>    
+                    
+                        <ul class="app-header-buttons pull-right">
+                            <li>
+                                <div class="contact contact-rounded contact-bordered contact-lg contact-ps-controls">
+                                    <img src="{% static './assets/images/landing/1bot.svg' %}" alt="GITBO">
+                                    <div class="contact-container">
+                                        <a href="#">GITBO</a>
+                                        <span>Administrator</span>
+                                    </div>
+                                    <div class="contact-controls">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-default btn-icon" data-toggle="dropdown"><span class="icon-cog"></span></button>                        
+                                            <ul class="dropdown-menu dropdown-left">
+                                                <li><a href="#"><span class="icon-cog"></span> Settings</a></li> 
+                                                <li><a href="#"><span class="icon-envelope"></span> Messages <span class="label label-danger pull-right">+24</span></a></li>
+                                                <li><a href="#"><span class="icon-users"></span> Contacts <span class="label label-default pull-right">76</span></a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#"><span class="icon-exit"></span> Log Out</a></li> 
+                                            </ul>
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </li>        
+                        </ul>
+                    </div>
+                    <!-- END APP HEADER  -->
+                {% block content%}
+
+                {% endblock content %}
+            
+            <!-- APP OVERLAY -->
+            <div class="app-overlay"></div>
+            <!-- END APP OVERLAY -->
+        </div>        
+        <!-- END APP WRAPPER -->                
+        
+        <!-- IMPORTANT SCRIPTS -->
+        <script src="{% static 'js/vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'js/vendor/jquery/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/bootstrap.css' %}"></script>
+        <script src="{% static 'js/bootstrap-responsive.css' %}"></script>
+        <script src="{% static 'js/vendor/moment/moment.min.js' %}"></script>
+        <script src="{% static 'js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js' %}"></script>
+        <!-- END IMPORTANT SCRIPTS -->
+        <!-- APP SCRIPTS -->
+        <script src="{% static 'js/app.js' %}"></script>
+        <script src="{% static 'js/app_plugins.js' %}"></script>
+        <script src="{% static 'js/app_demo.js' %}"></script>
+        <script src="{% static 'js/demo.js' %}"></script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery.form.min.js' %}"></script>
+        <!-- END APP SCRIPTS -->
+    </body>
+</html>

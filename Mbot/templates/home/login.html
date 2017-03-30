@@ -1,0 +1,77 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>                        
+        <title>USM-Login</title>            
+      {% block css %}
+      <style type="text/css">
+      
+      </style>
+    {% endblock %}
+
+       <!-- META SECTION -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <!-- END META SECTION -->
+
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <!-- EOF CSS INCLUDE -->
+    </head>
+    <body>        
+        
+        <!-- APP WRAPPER -->
+        <div class="app app-fh">
+
+            <!-- START APP CONTAINER -->
+            <div class="app-container" style="background: url({% static 'assets/images/background/bg-1.jpg' %}) center center no-repeat fixed;">
+                
+                <div class="app-login-box">
+                    <div class="app-login-box-title padding-top-30">
+                    <br>
+                       <div class="title">Inicio de Sesion</div>
+                        <div><img src="{% static 'css/img/motos/LOGOSUSM3.png'%}" height="110" width="210"></div>
+                        <div class="subtitle">USM Motocicletas!</div>                        
+                    </div>                    
+                    <div class="app-login-box-container margin-top-20">
+                        <div class="title">Ingrese sus datos</div>
+                        <form action="" method="post">
+                        <center>
+                            {% csrf_token %}
+                              {{form.as_p}}                          
+                            <div class="form-group"><br><br>                            
+                                <button class="btn btn-success btn-block" type="submit">Iniciar Sesion</button>                                
+                            </div>
+                        </form>
+                    </div>                           
+                    <div class="app-login-box-footer">
+                        &copy; Alfredynho 2016. All rights reserved.
+                    </div>
+                </div>
+                                
+            </div>
+            <!-- END APP CONTAINER -->
+           
+        </div>        
+        <!-- END APP WRAPPER -->                
+        
+        <!-- IMPORTANT SCRIPTS -->
+        <script src="{% static 'js/vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'js/vendor/jquery/jquery-migrate.min.js' %}"></script>
+        <script src="{% static 'js/vendor/jquery/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'js/vendor/bootstrap/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/vendor/moment/moment.min.js' %}"></script>
+        <script src="{% static 'js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js' %}"></script>
+        <!-- END IMPORTANT SCRIPTS --> 
+
+        <!-- APP SCRIPTS -->
+        <script src="{% static 'js/app.js' %}"></script>
+        <script src="{% static 'js/app_plugins.js' %}"></script>
+        <script src="{% static 'js/app_demo.js' %}"></script>
+        <!-- END APP SCRIPTS --> 
+    </body>
+</html>

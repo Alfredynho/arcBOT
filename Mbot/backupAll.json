@@ -1,0 +1,1607 @@
+[{
+	"model": "contenttypes.contenttype",
+	"pk": 1,
+	"fields": {
+		"app_label": "admin",
+		"model": "logentry"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 2,
+	"fields": {
+		"app_label": "auth",
+		"model": "permission"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 3,
+	"fields": {
+		"app_label": "auth",
+		"model": "group"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 4,
+	"fields": {
+		"app_label": "auth",
+		"model": "user"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 5,
+	"fields": {
+		"app_label": "contenttypes",
+		"model": "contenttype"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 6,
+	"fields": {
+		"app_label": "sessions",
+		"model": "session"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 7,
+	"fields": {
+		"app_label": "motorcycle",
+		"model": "createtype"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 8,
+	"fields": {
+		"app_label": "motorcycle",
+		"model": "motorcycle"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 9,
+	"fields": {
+		"app_label": "assistant",
+		"model": "category"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 10,
+	"fields": {
+		"app_label": "assistant",
+		"model": "assistant"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 11,
+	"fields": {
+		"app_label": "business",
+		"model": "empresa"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 12,
+	"fields": {
+		"app_label": "personal",
+		"model": "personal"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 13,
+	"fields": {
+		"app_label": "promotions",
+		"model": "promociones"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 15,
+	"fields": {
+		"app_label": "usuario",
+		"model": "usuario"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 16,
+	"fields": {
+		"app_label": "replacement",
+		"model": "repuesto"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 17,
+	"fields": {
+		"app_label": "reparacion",
+		"model": "reparacion"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 18,
+	"fields": {
+		"app_label": "sale",
+		"model": "ventamotocicleta"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 19,
+	"fields": {
+		"app_label": "sale",
+		"model": "ventarepuesto"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "4zu3kcw958dcsli0y6ffjdidck1tujjh",
+	"fields": {
+		"session_data": "NzZjMWJhNWQ3YTk4MDllZGI2NzYxNWUzOWM2YWNkZTU0ZWE4MTFiMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiJhZjhjYWFjNGZlYmE5MDRiMzgwNWM0ODYzMGQ3N2EzNDlmODdiNTM4In0=",
+		"expire_date": "2017-02-11T18:57:26.964Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "82a08o7h9rlem0fsulnzdm1arveruuwt",
+	"fields": {
+		"session_data": "MWEzZjdhZjkyZGQ1YmVlYTZmZGVkYWM4NDRmYmViZDk5NzM1OTQxMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiYWY4Y2FhYzRmZWJhOTA0YjM4MDVjNDg2MzBkNzdhMzQ5Zjg3YjUzOCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+		"expire_date": "2017-02-11T11:53:30.972Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "b632ji561rh0ot76f6ngjgbov9zea96j",
+	"fields": {
+		"session_data": "NzZjMWJhNWQ3YTk4MDllZGI2NzYxNWUzOWM2YWNkZTU0ZWE4MTFiMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiJhZjhjYWFjNGZlYmE5MDRiMzgwNWM0ODYzMGQ3N2EzNDlmODdiNTM4In0=",
+		"expire_date": "2017-02-08T13:17:49.423Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "bpy39fxzbrzg6ehxkj68kgm138hfkyln",
+	"fields": {
+		"session_data": "YWM0MWNmYjI3Yzk3ZmI5MzQwNDZmYThiODZjNDI5OTc3OWJlZWYyMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiIyZGQwZDQ0NWY3ZGNjMWYwOGIyODY4NDViMThjYmFlNjExMTg4ODcxIn0=",
+		"expire_date": "2017-02-04T03:42:42.134Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "c7kjr47z6w0dvg2fwusy0hzo58ie1fcf",
+	"fields": {
+		"session_data": "NzZjMWJhNWQ3YTk4MDllZGI2NzYxNWUzOWM2YWNkZTU0ZWE4MTFiMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiJhZjhjYWFjNGZlYmE5MDRiMzgwNWM0ODYzMGQ3N2EzNDlmODdiNTM4In0=",
+		"expire_date": "2017-02-19T03:51:03.563Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "q6kgxbvtmb2un7ttnt7m4jmqkg2wby13",
+	"fields": {
+		"session_data": "OGJhNzQxNGQ3OTY2YWM5Y2ViMzNhY2E0NWNiYTBhZGQyYjJhNjE4NDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZjhjYWFjNGZlYmE5MDRiMzgwNWM0ODYzMGQ3N2EzNDlmODdiNTM4In0=",
+		"expire_date": "2017-02-08T12:12:13.282Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "rdd7n31dr7v7h6fbwqe7cevk3yhrhbe1",
+	"fields": {
+		"session_data": "YzJhN2U4NjQ1MDQ5NjM5NmUwZjc0MzcxZGQxZWVkNDQ4MmVjMzI3Zjp7Il9hdXRoX3VzZXJfaGFzaCI6IjJkZDBkNDQ1ZjdkY2MxZjA4YjI4Njg0NWIxOGNiYWU2MTExODg4NzEiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+		"expire_date": "2017-01-29T22:05:28.326Z"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "t8nmffy813wkukufexntgwzcw2zim24e",
+	"fields": {
+		"session_data": "OGJhNzQxNGQ3OTY2YWM5Y2ViMzNhY2E0NWNiYTBhZGQyYjJhNjE4NDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZjhjYWFjNGZlYmE5MDRiMzgwNWM0ODYzMGQ3N2EzNDlmODdiNTM4In0=",
+		"expire_date": "2017-02-10T02:07:57.720Z"
+	}
+}, {
+	"model": "motorcycle.createtype",
+	"pk": 1,
+	"fields": {
+		"name": "CROSS"
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 1,
+	"fields": {
+		"serial_code": "TIGRE150",
+		"stock": 20,
+		"brand": "USM",
+		"color": "VERDE",
+		"price": 121323.0,
+		"cylinder_capacity": "23232",
+		"model": "2001",
+		"box": "MECANICA",
+		"motor": "automatico",
+		"characteristics": "la mejor",
+		"type": 1,
+		"image": "imagenes/motocicletas/2017/01/16/tigre150.jpg"
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 2,
+	"fields": {
+		"serial_code": "CROS200",
+		"stock": 20,
+		"brand": "USM",
+		"color": "NEGRO",
+		"price": 2000.0,
+		"cylinder_capacity": "20000",
+		"model": "2017",
+		"box": "MECANICA",
+		"motor": "automatico",
+		"characteristics": "Motor de un solo cilindro enfriado por aire caja 5ta, encendido electrico (CDI) y Patada, frenos delanteros , (disco) trasero (tambor) nro de Rueda 4.\r\nPlazas 1\r\nCombustible Gasolina",
+		"type": 1,
+		"image": "imagenes/motocicletas/2017/01/16/tigre150_ASrbxF1.jpg"
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 4,
+	"fields": {
+		"serial_code": "2020",
+		"stock": 20,
+		"brand": "USM",
+		"color": "PLOMO",
+		"price": 2000.0,
+		"cylinder_capacity": "MECANICA",
+		"model": "2014",
+		"box": "MECANICA",
+		"motor": "GASOLINA",
+		"characteristics": "LA MEJOR",
+		"type": 1,
+		"image": ""
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 5,
+	"fields": {
+		"serial_code": "3030",
+		"stock": 200,
+		"brand": "USM",
+		"color": "VERDE",
+		"price": 200.0,
+		"cylinder_capacity": "3232",
+		"model": "2323",
+		"box": "WEWE",
+		"motor": "SWEW",
+		"characteristics": "EWEWE",
+		"type": 1,
+		"image": ""
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 6,
+	"fields": {
+		"serial_code": "4040",
+		"stock": 200,
+		"brand": "USM",
+		"color": "DSD",
+		"price": 2323.0,
+		"cylinder_capacity": "WEWE",
+		"model": "WEWE",
+		"box": "WEWE",
+		"motor": "WEW",
+		"characteristics": "EDWEW",
+		"type": 1,
+		"image": ""
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 7,
+	"fields": {
+		"serial_code": "3030wwww",
+		"stock": 200,
+		"brand": "USM",
+		"color": "ff",
+		"price": 32323.0,
+		"cylinder_capacity": "32323",
+		"model": "3232",
+		"box": "wewew",
+		"motor": "wewe",
+		"characteristics": "sddwqewq`",
+		"type": 1,
+		"image": ""
+	}
+}, {
+	"model": "motorcycle.motorcycle",
+	"pk": 8,
+	"fields": {
+		"serial_code": "8008",
+		"stock": 200,
+		"brand": "USM",
+		"color": "dasd",
+		"price": 3232.0,
+		"cylinder_capacity": "wew",
+		"model": "wew",
+		"box": "wererer",
+		"motor": "rere",
+		"characteristics": "wewe`",
+		"type": 1,
+		"image": ""
+	}
+}, {
+	"model": "assistant.category",
+	"pk": 1,
+	"fields": {
+		"name": "PREGUNTAS FRECUENTES",
+		"description": "Esta categoria esta referida a preguntas frecuentes de los usuarios",
+		"active": true
+	}
+}, {
+	"model": "assistant.category",
+	"pk": 2,
+	"fields": {
+		"name": "EMPRESA",
+		"description": "Esta categoria esta destinada a informacion de la empres, esto incluye, direccion, personal, sucursales, empleados, horarios, etc.",
+		"active": true
+	}
+}, {
+	"model": "assistant.category",
+	"pk": 3,
+	"fields": {
+		"name": "MOTOCICLETAS",
+		"description": "Esta categoria se refiere a las motocicletas, precios, tipos, caracteristicas, etc.",
+		"active": true
+	}
+}, {
+	"model": "assistant.category",
+	"pk": 4,
+	"fields": {
+		"name": "REPUESTOS",
+		"description": "Esta categoria se refiere a los repuestos que vende la empresa, y destinada a proporcionar informacion como costos, marcas, colores, tipos , etc.",
+		"active": true
+	}
+}, {
+	"model": "assistant.category",
+	"pk": 5,
+	"fields": {
+		"name": "ASISTENCIA MECANICA",
+		"description": "Esta categoria esta destinada a dar informacion sobre el control mecanico que tiene el usuario de la empresa USMotos, datos como que dia el la revision de su motocicleta, etc",
+		"active": true
+	}
+}, {
+	"model": "assistant.category",
+	"pk": 6,
+	"fields": {
+		"name": "PROMOCIONES",
+		"description": "Esta categoria se refiere a las promociones que lance la empresa.",
+		"active": true
+	}
+}, {
+	"model": "assistant.assistant",
+	"pk": 1,
+	"fields": {
+		"question": "Hola donde queda la empresa?",
+		"answer": "La empresa queda en la avenida Brasil",
+		"category": 2
+	}
+}, {
+	"model": "assistant.assistant",
+	"pk": 2,
+	"fields": {
+		"question": "Que promociones tienen?",
+		"answer": "Tenemos las siguientes promociones",
+		"category": 6
+	}
+}, {
+	"model": "assistant.assistant",
+	"pk": 3,
+	"fields": {
+		"question": "Pueden mostrarme las motos de tipo CROSS",
+		"answer": "Estas son las motos tipo CROSS",
+		"category": 3
+	}
+}, {
+	"model": "assistant.assistant",
+	"pk": 4,
+	"fields": {
+		"question": "Tienen repuestos para motocicletas?",
+		"answer": "Si tenemos son estos ???",
+		"category": 4
+	}
+}, {
+	"model": "assistant.assistant",
+	"pk": 5,
+	"fields": {
+		"question": "A que hora puedo venir para hacer revisar mi moto?",
+		"answer": "Puedes pasar en horarios de oficina o llamar al mecanico su numero es 73053045 Alfredo",
+		"category": 5
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 1,
+	"fields": {
+		"cedula": "4277300",
+		"nombre": "Paulino",
+		"paterno": "Callizaya",
+		"materno": "Mamani",
+		"celular": "71968593",
+		"cargo": "VENDEDOR"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 2,
+	"fields": {
+		"cedula": "6950564",
+		"nombre": "Alfredo",
+		"paterno": "Callizaya",
+		"materno": "Gutierrez",
+		"celular": "73053045",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 3,
+	"fields": {
+		"cedula": "5050505",
+		"nombre": "Jose",
+		"paterno": "Merida",
+		"materno": "Aro",
+		"celular": "030303",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 4,
+	"fields": {
+		"cedula": "2342323",
+		"nombre": "demo",
+		"paterno": "demo",
+		"materno": "demo",
+		"celular": "434343",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 5,
+	"fields": {
+		"cedula": "3232",
+		"nombre": "Admin",
+		"paterno": "admin",
+		"materno": "admin",
+		"celular": "4343",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 6,
+	"fields": {
+		"cedula": "434343",
+		"nombre": "user",
+		"paterno": "user",
+		"materno": "user",
+		"celular": "34343",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 7,
+	"fields": {
+		"cedula": "606006",
+		"nombre": "sdsa",
+		"paterno": "sdas",
+		"materno": "sadsad",
+		"celular": "24334354",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 8,
+	"fields": {
+		"cedula": "45465345435",
+		"nombre": "frwdfs",
+		"paterno": "sdfdsf",
+		"materno": "sdfsd",
+		"celular": "34343",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 9,
+	"fields": {
+		"cedula": "6768798",
+		"nombre": "rewrwe",
+		"paterno": "srsdfrew",
+		"materno": "frewrew",
+		"celular": "34343",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 10,
+	"fields": {
+		"cedula": "39043943894",
+		"nombre": "wedsd",
+		"paterno": "sdsa",
+		"materno": "sdsad",
+		"celular": "343434",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 11,
+	"fields": {
+		"cedula": "56w34324",
+		"nombre": "wewr",
+		"paterno": "sdfs",
+		"materno": "dsfsd",
+		"celular": "343434",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 12,
+	"fields": {
+		"cedula": "090909",
+		"nombre": "dsadasdas",
+		"paterno": "sdsadsa",
+		"materno": "sdfdsf454",
+		"celular": "45454",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "personal.personal",
+	"pk": 13,
+	"fields": {
+		"cedula": "34343040340",
+		"nombre": "sdfd",
+		"paterno": "sdfsdf",
+		"materno": "sdfsdf",
+		"celular": "sdfsdf",
+		"cargo": "GERENTE"
+	}
+}, {
+	"model": "replacement.repuesto",
+	"pk": 1,
+	"fields": {
+		"serial_code": "122",
+		"name": null,
+		"description": "qwe232323232323",
+		"stock": 11,
+		"brand": "USM",
+		"price": 32112.0,
+		"image": ""
+	}
+}, {
+	"model": "replacement.repuesto",
+	"pk": 2,
+	"fields": {
+		"serial_code": "20202",
+		"name": "CASCO",
+		"description": "CASCO",
+		"stock": 0,
+		"brand": "USM",
+		"price": 2000.0,
+		"image": ""
+	}
+}, {
+	"model": "sale.ventamotocicleta",
+	"pk": 1,
+	"fields": {
+		"motocicleta": 1,
+		"usuario": 1,
+		"personal": 1,
+		"fecha": "2017-02-05T04:09:38Z",
+		"cantidad": 0,
+		"total": 1111.0
+	}
+}, {
+	"model": "sale.ventamotocicleta",
+	"pk": 2,
+	"fields": {
+		"motocicleta": 2,
+		"usuario": 1,
+		"personal": 1,
+		"fecha": "2017-02-05T04:14:01Z",
+		"cantidad": 1,
+		"total": 20000.0
+	}
+}, {
+	"model": "sale.ventarepuesto",
+	"pk": 1,
+	"fields": {
+		"repuesto": 2,
+		"usuario": 1,
+		"personal": 1,
+		"fecha": "2017-02-05T04:26:58Z",
+		"cantidad": 1,
+		"total": 2000.0
+	}
+}, {
+	"model": "usuario.usuario",
+	"pk": 1,
+	"fields": {
+		"cedula": "6950564",
+		"nombre": "Alfredo",
+		"paterno": "Callizaya",
+		"materno": "Gutierrez",
+		"celular": "73053045"
+	}
+}, {
+	"model": "reparacion.reparacion",
+	"pk": 1,
+	"fields": {
+		"placa": "1223VCW",
+		"usuario": 1,
+		"motocicleta": 1,
+		"detalle_reparacion": "el usuario me dejo la moto con el farrol roto",
+		"personal": 1,
+		"inicio_reparacion": "2017-01-16T03:45:03Z",
+		"fin_reparacion": "2017-01-16T03:45:05Z"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 1,
+	"fields": {
+		"name": "Can add log entry",
+		"content_type": 1,
+		"codename": "add_logentry"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 2,
+	"fields": {
+		"name": "Can change log entry",
+		"content_type": 1,
+		"codename": "change_logentry"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 3,
+	"fields": {
+		"name": "Can delete log entry",
+		"content_type": 1,
+		"codename": "delete_logentry"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 4,
+	"fields": {
+		"name": "Can add permission",
+		"content_type": 2,
+		"codename": "add_permission"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 5,
+	"fields": {
+		"name": "Can change permission",
+		"content_type": 2,
+		"codename": "change_permission"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 6,
+	"fields": {
+		"name": "Can delete permission",
+		"content_type": 2,
+		"codename": "delete_permission"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 7,
+	"fields": {
+		"name": "Can add group",
+		"content_type": 3,
+		"codename": "add_group"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 8,
+	"fields": {
+		"name": "Can change group",
+		"content_type": 3,
+		"codename": "change_group"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 9,
+	"fields": {
+		"name": "Can delete group",
+		"content_type": 3,
+		"codename": "delete_group"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 10,
+	"fields": {
+		"name": "Can add user",
+		"content_type": 4,
+		"codename": "add_user"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 11,
+	"fields": {
+		"name": "Can change user",
+		"content_type": 4,
+		"codename": "change_user"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 12,
+	"fields": {
+		"name": "Can delete user",
+		"content_type": 4,
+		"codename": "delete_user"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 13,
+	"fields": {
+		"name": "Can add content type",
+		"content_type": 5,
+		"codename": "add_contenttype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 14,
+	"fields": {
+		"name": "Can change content type",
+		"content_type": 5,
+		"codename": "change_contenttype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 15,
+	"fields": {
+		"name": "Can delete content type",
+		"content_type": 5,
+		"codename": "delete_contenttype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 16,
+	"fields": {
+		"name": "Can add session",
+		"content_type": 6,
+		"codename": "add_session"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 17,
+	"fields": {
+		"name": "Can change session",
+		"content_type": 6,
+		"codename": "change_session"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 18,
+	"fields": {
+		"name": "Can delete session",
+		"content_type": 6,
+		"codename": "delete_session"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 19,
+	"fields": {
+		"name": "Can add create type",
+		"content_type": 7,
+		"codename": "add_createtype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 20,
+	"fields": {
+		"name": "Can change create type",
+		"content_type": 7,
+		"codename": "change_createtype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 21,
+	"fields": {
+		"name": "Can delete create type",
+		"content_type": 7,
+		"codename": "delete_createtype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 22,
+	"fields": {
+		"name": "Can add Motocicleta",
+		"content_type": 8,
+		"codename": "add_motorcycle"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 23,
+	"fields": {
+		"name": "Can change Motocicleta",
+		"content_type": 8,
+		"codename": "change_motorcycle"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 24,
+	"fields": {
+		"name": "Can delete Motocicleta",
+		"content_type": 8,
+		"codename": "delete_motorcycle"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 25,
+	"fields": {
+		"name": "Can add category",
+		"content_type": 9,
+		"codename": "add_category"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 26,
+	"fields": {
+		"name": "Can change category",
+		"content_type": 9,
+		"codename": "change_category"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 27,
+	"fields": {
+		"name": "Can delete category",
+		"content_type": 9,
+		"codename": "delete_category"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 28,
+	"fields": {
+		"name": "Can add assistant",
+		"content_type": 10,
+		"codename": "add_assistant"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 29,
+	"fields": {
+		"name": "Can change assistant",
+		"content_type": 10,
+		"codename": "change_assistant"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 30,
+	"fields": {
+		"name": "Can delete assistant",
+		"content_type": 10,
+		"codename": "delete_assistant"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 31,
+	"fields": {
+		"name": "Can add empresa",
+		"content_type": 11,
+		"codename": "add_empresa"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 32,
+	"fields": {
+		"name": "Can change empresa",
+		"content_type": 11,
+		"codename": "change_empresa"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 33,
+	"fields": {
+		"name": "Can delete empresa",
+		"content_type": 11,
+		"codename": "delete_empresa"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 34,
+	"fields": {
+		"name": "Can add Personal",
+		"content_type": 12,
+		"codename": "add_personal"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 35,
+	"fields": {
+		"name": "Can change Personal",
+		"content_type": 12,
+		"codename": "change_personal"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 36,
+	"fields": {
+		"name": "Can delete Personal",
+		"content_type": 12,
+		"codename": "delete_personal"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 37,
+	"fields": {
+		"name": "Can add Promocion",
+		"content_type": 13,
+		"codename": "add_promociones"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 38,
+	"fields": {
+		"name": "Can change Promocion",
+		"content_type": 13,
+		"codename": "change_promociones"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 39,
+	"fields": {
+		"name": "Can delete Promocion",
+		"content_type": 13,
+		"codename": "delete_promociones"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 43,
+	"fields": {
+		"name": "Can add Usuario",
+		"content_type": 15,
+		"codename": "add_usuario"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 44,
+	"fields": {
+		"name": "Can change Usuario",
+		"content_type": 15,
+		"codename": "change_usuario"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 45,
+	"fields": {
+		"name": "Can delete Usuario",
+		"content_type": 15,
+		"codename": "delete_usuario"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 46,
+	"fields": {
+		"name": "Can add Repuesto",
+		"content_type": 16,
+		"codename": "add_repuesto"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 47,
+	"fields": {
+		"name": "Can change Repuesto",
+		"content_type": 16,
+		"codename": "change_repuesto"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 48,
+	"fields": {
+		"name": "Can delete Repuesto",
+		"content_type": 16,
+		"codename": "delete_repuesto"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 49,
+	"fields": {
+		"name": "Can add Reparacion de Motocicleta",
+		"content_type": 17,
+		"codename": "add_reparacion"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 50,
+	"fields": {
+		"name": "Can change Reparacion de Motocicleta",
+		"content_type": 17,
+		"codename": "change_reparacion"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 51,
+	"fields": {
+		"name": "Can delete Reparacion de Motocicleta",
+		"content_type": 17,
+		"codename": "delete_reparacion"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 52,
+	"fields": {
+		"name": "Can add Venta de Motocicleta",
+		"content_type": 18,
+		"codename": "add_ventamotocicleta"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 53,
+	"fields": {
+		"name": "Can change Venta de Motocicleta",
+		"content_type": 18,
+		"codename": "change_ventamotocicleta"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 54,
+	"fields": {
+		"name": "Can delete Venta de Motocicleta",
+		"content_type": 18,
+		"codename": "delete_ventamotocicleta"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 55,
+	"fields": {
+		"name": "Can add Venta de Repuesto",
+		"content_type": 19,
+		"codename": "add_ventarepuesto"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 56,
+	"fields": {
+		"name": "Can change Venta de Repuesto",
+		"content_type": 19,
+		"codename": "change_ventarepuesto"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 57,
+	"fields": {
+		"name": "Can delete Venta de Repuesto",
+		"content_type": 19,
+		"codename": "delete_ventarepuesto"
+	}
+}, {
+	"model": "auth.user",
+	"pk": 1,
+	"fields": {
+		"password": "pbkdf2_sha256$30000$C9KSQs85vu3T$Q/umlj9REu5mYfNMO3CmujiuXH8wjIULcSU2kIcPLFw=",
+		"last_login": "2017-02-05T03:51:03.461Z",
+		"is_superuser": true,
+		"username": "alfredo",
+		"first_name": "",
+		"last_name": "",
+		"email": "alfredo@mail.com",
+		"is_staff": true,
+		"is_active": true,
+		"date_joined": "2017-01-15T21:44:01.073Z",
+		"groups": [],
+		"user_permissions": []
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 1,
+	"fields": {
+		"action_time": "2017-01-16T02:42:12.174Z",
+		"user": 1,
+		"content_type": 16,
+		"object_id": "1",
+		"object_repr": "122 -> USM: ",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 2,
+	"fields": {
+		"action_time": "2017-01-16T03:42:29.151Z",
+		"user": 1,
+		"content_type": 15,
+		"object_id": "1",
+		"object_repr": "Alfredo -> Callizaya: ",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 3,
+	"fields": {
+		"action_time": "2017-01-16T03:43:41.728Z",
+		"user": 1,
+		"content_type": 7,
+		"object_id": "1",
+		"object_repr": "CROSS",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 4,
+	"fields": {
+		"action_time": "2017-01-16T03:43:55.551Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "1",
+		"object_repr": "yugwb333 -> USM: ",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 5,
+	"fields": {
+		"action_time": "2017-01-16T03:44:54.201Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "1",
+		"object_repr": "Paulino -> Callizaya: ",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 6,
+	"fields": {
+		"action_time": "2017-01-16T03:45:08.569Z",
+		"user": 1,
+		"content_type": 17,
+		"object_id": "1",
+		"object_repr": "1223VCW - yugwb333 -> USM: ",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 7,
+	"fields": {
+		"action_time": "2017-01-16T05:36:02.217Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "1",
+		"object_repr": "TIGRE150 USM: ",
+		"action_flag": 2,
+		"change_message": "Changed serial_code and image."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 8,
+	"fields": {
+		"action_time": "2017-01-16T05:54:31.498Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "2",
+		"object_repr": "CROS200 USM: ",
+		"action_flag": 1,
+		"change_message": "Added."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 9,
+	"fields": {
+		"action_time": "2017-01-21T03:43:22.152Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "3",
+		"object_repr": "23232 USM: ",
+		"action_flag": 1,
+		"change_message": "A\u00f1adido."
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 10,
+	"fields": {
+		"action_time": "2017-01-27T02:08:32.652Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "3",
+		"object_repr": "23232 USM: ",
+		"action_flag": 3,
+		"change_message": ""
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 11,
+	"fields": {
+		"action_time": "2017-01-28T19:17:53.264Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "2",
+		"object_repr": "CROS200 USM: ",
+		"action_flag": 2,
+		"change_message": "[{\"changed\": {\"fields\": [\"characteristics\"]}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 12,
+	"fields": {
+		"action_time": "2017-01-28T19:20:58.773Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "1",
+		"object_repr": "TIGRE150 USM: ",
+		"action_flag": 2,
+		"change_message": "[{\"changed\": {\"fields\": [\"box\"]}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 13,
+	"fields": {
+		"action_time": "2017-01-28T19:46:51.029Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "4",
+		"object_repr": "2020 USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 14,
+	"fields": {
+		"action_time": "2017-01-28T19:47:53.606Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "5",
+		"object_repr": "3030 USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 15,
+	"fields": {
+		"action_time": "2017-01-28T19:48:33.217Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "6",
+		"object_repr": "4040 USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 16,
+	"fields": {
+		"action_time": "2017-01-28T19:49:08.132Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "7",
+		"object_repr": "3030wwww USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 17,
+	"fields": {
+		"action_time": "2017-01-28T19:49:30.863Z",
+		"user": 1,
+		"content_type": 8,
+		"object_id": "8",
+		"object_repr": "8008 USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 18,
+	"fields": {
+		"action_time": "2017-01-28T20:29:59.965Z",
+		"user": 1,
+		"content_type": 16,
+		"object_id": "2",
+		"object_repr": "CASCO",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 19,
+	"fields": {
+		"action_time": "2017-01-28T20:46:53.279Z",
+		"user": 1,
+		"content_type": 16,
+		"object_id": "2",
+		"object_repr": "CASCO",
+		"action_flag": 2,
+		"change_message": "[{\"changed\": {\"fields\": [\"stock\"]}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 20,
+	"fields": {
+		"action_time": "2017-01-28T21:59:17.624Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "2",
+		"object_repr": "Alfredo Callizaya: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 21,
+	"fields": {
+		"action_time": "2017-01-28T21:59:58.076Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "3",
+		"object_repr": "Jose Merida: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 22,
+	"fields": {
+		"action_time": "2017-01-28T22:34:41.987Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "4",
+		"object_repr": "demo demo: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 23,
+	"fields": {
+		"action_time": "2017-01-28T22:34:55.326Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "5",
+		"object_repr": "Admin admin: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 24,
+	"fields": {
+		"action_time": "2017-01-28T22:35:07.178Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "6",
+		"object_repr": "user user: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 25,
+	"fields": {
+		"action_time": "2017-01-28T22:36:35.456Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "7",
+		"object_repr": "sdsa sdas: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 26,
+	"fields": {
+		"action_time": "2017-01-28T22:36:47.440Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "8",
+		"object_repr": "frwdfs sdfdsf: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 27,
+	"fields": {
+		"action_time": "2017-01-28T22:36:59.892Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "9",
+		"object_repr": "rewrwe srsdfrew: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 28,
+	"fields": {
+		"action_time": "2017-01-28T22:37:11.128Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "10",
+		"object_repr": "wedsd sdsa: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 29,
+	"fields": {
+		"action_time": "2017-01-28T22:37:43.352Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "11",
+		"object_repr": "wewr sdfs: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 30,
+	"fields": {
+		"action_time": "2017-01-28T22:37:55.656Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "12",
+		"object_repr": "dsadasdas sdsadsa: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 31,
+	"fields": {
+		"action_time": "2017-01-28T22:38:07.605Z",
+		"user": 1,
+		"content_type": 12,
+		"object_id": "13",
+		"object_repr": "sdfd sdfsdf: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 32,
+	"fields": {
+		"action_time": "2017-02-05T04:09:42.387Z",
+		"user": 1,
+		"content_type": 18,
+		"object_id": "1",
+		"object_repr": "TIGRE150 USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 33,
+	"fields": {
+		"action_time": "2017-02-05T04:14:06.683Z",
+		"user": 1,
+		"content_type": 18,
+		"object_id": "2",
+		"object_repr": "CROS200 USM: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 34,
+	"fields": {
+		"action_time": "2017-02-05T04:27:02.537Z",
+		"user": 1,
+		"content_type": 19,
+		"object_id": "1",
+		"object_repr": "20202 CASCO: ",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 35,
+	"fields": {
+		"action_time": "2017-02-05T17:23:13.765Z",
+		"user": 1,
+		"content_type": 9,
+		"object_id": "1",
+		"object_repr": "PREGUNTAS FRECUENTES",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 36,
+	"fields": {
+		"action_time": "2017-02-05T17:25:20.522Z",
+		"user": 1,
+		"content_type": 9,
+		"object_id": "2",
+		"object_repr": "EMPRESA",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 37,
+	"fields": {
+		"action_time": "2017-02-05T17:28:06.869Z",
+		"user": 1,
+		"content_type": 9,
+		"object_id": "3",
+		"object_repr": "MOTOCICLETAS",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 38,
+	"fields": {
+		"action_time": "2017-02-05T17:30:53.877Z",
+		"user": 1,
+		"content_type": 9,
+		"object_id": "4",
+		"object_repr": "REPUESTOS",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 39,
+	"fields": {
+		"action_time": "2017-02-05T17:33:05.546Z",
+		"user": 1,
+		"content_type": 9,
+		"object_id": "5",
+		"object_repr": "ASISTENCIA MECANICA",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 40,
+	"fields": {
+		"action_time": "2017-02-05T17:34:36.939Z",
+		"user": 1,
+		"content_type": 9,
+		"object_id": "6",
+		"object_repr": "PROMOCIONES",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 41,
+	"fields": {
+		"action_time": "2017-02-05T17:41:37.346Z",
+		"user": 1,
+		"content_type": 10,
+		"object_id": "1",
+		"object_repr": "Hola donde queda la empresa?",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 42,
+	"fields": {
+		"action_time": "2017-02-05T17:42:44.524Z",
+		"user": 1,
+		"content_type": 10,
+		"object_id": "2",
+		"object_repr": "Que promociones tienen?",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 43,
+	"fields": {
+		"action_time": "2017-02-05T17:43:22.021Z",
+		"user": 1,
+		"content_type": 10,
+		"object_id": "3",
+		"object_repr": "Pueden mostrarme las motos de tipo CROSS",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 44,
+	"fields": {
+		"action_time": "2017-02-05T17:43:52.185Z",
+		"user": 1,
+		"content_type": 10,
+		"object_id": "4",
+		"object_repr": "Tienen repuestos para motocicletas?",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}, {
+	"model": "admin.logentry",
+	"pk": 45,
+	"fields": {
+		"action_time": "2017-02-05T17:44:33.657Z",
+		"user": 1,
+		"content_type": 10,
+		"object_id": "5",
+		"object_repr": "A que hora puedo venir para hacer revisar mi moto?",
+		"action_flag": 1,
+		"change_message": "[{\"added\": {}}]"
+	}
+}]

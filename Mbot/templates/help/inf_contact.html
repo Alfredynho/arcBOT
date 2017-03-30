@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+        <title>{% block title %}@alfredynho{% endblock title %}</title>            
+{% load i18n static %}
+
+{% block content %}
+<!-- APP WRAPPER -->
+<div class="app app-fh">           
+
+    <!-- START APP CONTAINER -->
+    <img class="app-container" src="{% static 'assets/images/background/bg-1.jpg' %}">
+        
+        <div class="app-lock">
+            
+            <div class="app-lock-user">
+                <img src="{% static 'assets/images/users/alfredynho.jpg' %}" alt="@alfredynho">
+            </div>
+            <div class="app-lock-form">
+                <form action="index.html" method="post">
+                    <div class="form-group">                                               
+                        <input type="password" class="form-control" name="pin">                                    
+                    </div>                            
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="app-checkbox">
+                                    <label><input type="checkbox" name="logged" value="1" checked> Keep me logged</label>
+                                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-success btn-block btn-icon-fixed"><span class="icon-lock"></span>Unlock</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+                        
+    </div>
+    <!-- END APP CONTAINER -->
+   
+</div>        
+<!-- END APP WRAPPER -->  
+{% endblock content%}
